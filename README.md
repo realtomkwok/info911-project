@@ -2,6 +2,11 @@
 
 ## Logs
 ```text
+Model Summary:
+
+Model Name: model-pca-17
+Data: PCA
+
 MLP2(
   (fc1): Linear(in_features=256, out_features=512, bias=True)
   (fc2): Linear(in_features=512, out_features=256, bias=True)
@@ -100,4 +105,129 @@ Final Validation Loss: 0.9321688547124601
 Final Validation Accuracy: 0.7211111111111111
 
 Total Training Time: 33.0 minutes, 35.155251026153564 seconds
+```
+```text
+Model Summary:
+Model Name: model-pca-20240428-211634
+Data: PCA and 50 features
+
+Training data: torch.Size([10200, 50]), Training labels: torch.Size([10200])
+Validation data: torch.Size([1800, 50]), Validation labels: torch.Size([1800])
+
+
+--------------------
+
+
+MLP3(
+  (fc1): Linear(in_features=50, out_features=100, bias=True)
+  (fc2): Linear(in_features=100, out_features=200, bias=True)
+  (fc3): Linear(in_features=200, out_features=128, bias=True)
+  (fc4): Linear(in_features=128, out_features=120, bias=True)
+  (relu): ReLU()
+  (dropout): Dropout(p=0.5, inplace=False)
+)
+Initial Input shape: 50
+Epoch 1, Training Loss: 1.4765398502349854, Validation Loss: 2.4697428028202717
+Epoch 2, Training Loss: 1.3818618059158325, Validation Loss: 1.6132958441827536
+Epoch 3, Training Loss: 0.8195878267288208, Validation Loss: 1.4141999934601417
+Epoch 4, Training Loss: 0.8171063661575317, Validation Loss: 1.3193213302618176
+Epoch 5, Training Loss: 0.7292091250419617, Validation Loss: 1.2729750596183456
+Epoch 6, Training Loss: 0.7459471821784973, Validation Loss: 1.2345456845083067
+Epoch 7, Training Loss: 0.7848841547966003, Validation Loss: 1.205815089753208
+Epoch 8, Training Loss: 0.7729723453521729, Validation Loss: 1.1738692445147576
+Epoch 9, Training Loss: 0.752031683921814, Validation Loss: 1.148128446790959
+Epoch 10, Training Loss: 0.7675915360450745, Validation Loss: 1.1285983990606232
+Epoch 11, Training Loss: 0.8224028944969177, Validation Loss: 1.1103726778573926
+Epoch 12, Training Loss: 0.8136557936668396, Validation Loss: 1.0942765405134478
+Epoch 13, Training Loss: 0.8306647539138794, Validation Loss: 1.081257375773534
+Epoch 14, Training Loss: 0.8212552666664124, Validation Loss: 1.0682552877194635
+Epoch 15, Training Loss: 0.8013828992843628, Validation Loss: 1.0569051120590625
+Epoch 16, Training Loss: 0.8107056617736816, Validation Loss: 1.0481096736915383
+Epoch 17, Training Loss: 0.7931888699531555, Validation Loss: 1.0398635618472083
+Epoch 18, Training Loss: 0.7917965054512024, Validation Loss: 1.0326949429695054
+Epoch 19, Training Loss: 0.7585141062736511, Validation Loss: 1.0259187176039106
+Epoch 20, Training Loss: 0.7544866800308228, Validation Loss: 1.0199398460196487
+Epoch 21, Training Loss: 0.7556812763214111, Validation Loss: 1.0143198050111015
+Epoch 22, Training Loss: 0.7535278797149658, Validation Loss: 1.0097219991577893
+Epoch 23, Training Loss: 0.7350142598152161, Validation Loss: 1.005499339996475
+Epoch 24, Training Loss: 0.7297743558883667, Validation Loss: 1.001379949720059
+Epoch 25, Training Loss: 0.7234083414077759, Validation Loss: 0.9978415053985857
+Epoch 26, Training Loss: 0.7078673243522644, Validation Loss: 0.9945051090192929
+Epoch 27, Training Loss: 0.705875813961029, Validation Loss: 0.9916477905273334
+Epoch 28, Training Loss: 0.7040061354637146, Validation Loss: 0.9890742729970305
+Epoch 29, Training Loss: 0.6960321664810181, Validation Loss: 0.9865327106028174
+Epoch 30, Training Loss: 0.6936492919921875, Validation Loss: 0.984731882767519
+Epoch 31, Training Loss: 0.6858910322189331, Validation Loss: 0.9828052980152683
+Epoch 32, Training Loss: 0.6823820471763611, Validation Loss: 0.9811640213466146
+Epoch 33, Training Loss: 0.6777534484863281, Validation Loss: 0.9796601098314083
+Epoch 34, Training Loss: 0.6737461686134338, Validation Loss: 0.9784021987503446
+Epoch 35, Training Loss: 0.6686629056930542, Validation Loss: 0.9772725637436896
+Epoch 36, Training Loss: 0.6651846170425415, Validation Loss: 0.976329009022512
+Epoch 37, Training Loss: 0.6608237028121948, Validation Loss: 0.975490655985842
+Epoch 38, Training Loss: 0.6556878089904785, Validation Loss: 0.9747022261389066
+Epoch 39, Training Loss: 0.652536928653717, Validation Loss: 0.9740255240535932
+Epoch 40, Training Loss: 0.6486602425575256, Validation Loss: 0.9734953516675806
+Epoch 41, Training Loss: 0.6460981965065002, Validation Loss: 0.9730034309886266
+Epoch 42, Training Loss: 0.6458196640014648, Validation Loss: 0.9725420804319179
+Epoch 43, Training Loss: 0.6458266377449036, Validation Loss: 0.9721278031366334
+Epoch 44, Training Loss: 0.6473273634910583, Validation Loss: 0.9717640342009771
+Epoch 45, Training Loss: 0.6474525928497314, Validation Loss: 0.9714082888419378
+Epoch 46, Training Loss: 0.6482560634613037, Validation Loss: 0.9711117711184003
+Epoch 47, Training Loss: 0.6488006114959717, Validation Loss: 0.9708486519500407
+Epoch 48, Training Loss: 0.6494182348251343, Validation Loss: 0.9705914096986331
+Epoch 49, Training Loss: 0.6506023406982422, Validation Loss: 0.9703846491661776
+Epoch 50, Training Loss: 0.651642382144928, Validation Loss: 0.9701823899743612
+Finished Training
+
+
+--------------------
+
+
+--------------------------------------------------
+Model Summary:
+MLP3(
+  (fc1): Linear(in_features=50, out_features=100, bias=True)
+  (fc2): Linear(in_features=100, out_features=200, bias=True)
+  (fc3): Linear(in_features=200, out_features=128, bias=True)
+  (fc4): Linear(in_features=128, out_features=120, bias=True)
+  (relu): ReLU()
+  (dropout): Dropout(p=0.5, inplace=False)
+)
+
+Loss function:
+CrossEntropyLoss()
+
+Optimizer:
+Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    initial_lr: 0.001
+    lr: 5.15377520732012e-06
+    maximize: False
+    weight_decay: 0.01
+)
+
+Learning Rate Scheduler:
+<torch.optim.lr_scheduler.ExponentialLR object at 0x29a168950>
+
+Number of Epochs: 50
+
+Final Training Loss: 0.651642382144928
+Final Validation Loss: 0.9701823899743612
+
+Final Validation Accuracy: 0.7211111111111111
+
+Total Training Time: 7.0 minutes, 5.522812843322754 seconds
+
+
+--------------------
+
+Model saved as: model_pca-20240428-211634.pth
+
 ```
