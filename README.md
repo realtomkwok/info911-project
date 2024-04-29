@@ -231,3 +231,132 @@ Total Training Time: 7.0 minutes, 5.522812843322754 seconds
 Model saved as: model_pca-20240428-211634.pth
 
 ```
+```text
+/var/folders/kt/y0r0pcx938l9pnmjlxpbm8zm0000gn/T/ipykernel_78017/747783963.py:7: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  y_train_tensor = torch.tensor(y_train)
+/var/folders/kt/y0r0pcx938l9pnmjlxpbm8zm0000gn/T/ipykernel_78017/747783963.py:13: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  y_valid_tensor = torch.tensor(y_valid)
+
+Data Summary:
+Data type: PCA & 50 features
+Training data: torch.Size([10200, 50]), Training labels: torch.Size([10200])
+Validation data: torch.Size([1800, 50]), Validation labels: torch.Size([1800])
+
+
+--------------------
+
+
+MLP2(
+  (fc1): Linear(in_features=50, out_features=100, bias=True)
+  (fc2): Linear(in_features=100, out_features=150, bias=True)
+  (fc3): Linear(in_features=150, out_features=128, bias=True)
+  (fc4): Linear(in_features=128, out_features=120, bias=True)
+  (relu): ReLU()
+  (dropout): Dropout(p=0.5, inplace=False)
+)
+Initial Input shape: 50
+Epoch 1, Training Loss: 5.663441181182861, Validation Loss: 2.496323791394631
+Epoch 2, Training Loss: 1.65287184715271, Validation Loss: 1.5163299463750122
+Epoch 3, Training Loss: 1.2760941982269287, Validation Loss: 1.3796394937555305
+Epoch 4, Training Loss: 1.324472188949585, Validation Loss: 1.308985453135101
+Epoch 5, Training Loss: 1.2271978855133057, Validation Loss: 1.258895482936253
+Epoch 6, Training Loss: 0.9896203875541687, Validation Loss: 1.2248676153582831
+Epoch 7, Training Loss: 0.9592721462249756, Validation Loss: 1.1929256861051545
+Epoch 8, Training Loss: 0.8784045577049255, Validation Loss: 1.1652657919423655
+Epoch 9, Training Loss: 0.8483695387840271, Validation Loss: 1.1438461859813995
+Epoch 10, Training Loss: 0.8147996068000793, Validation Loss: 1.125406618392897
+Epoch 11, Training Loss: 0.7505066990852356, Validation Loss: 1.107385219582098
+Epoch 12, Training Loss: 0.7607460618019104, Validation Loss: 1.0913759647060781
+Epoch 13, Training Loss: 0.7663783431053162, Validation Loss: 1.07878159388861
+Epoch 14, Training Loss: 0.7515919208526611, Validation Loss: 1.0656127552763792
+Epoch 15, Training Loss: 0.73350590467453, Validation Loss: 1.0553825278503872
+Epoch 16, Training Loss: 0.7062184810638428, Validation Loss: 1.0459751096990657
+Epoch 17, Training Loss: 0.6811403632164001, Validation Loss: 1.0383482733880454
+Epoch 18, Training Loss: 0.6443546414375305, Validation Loss: 1.0305327273604539
+Epoch 19, Training Loss: 0.6215500831604004, Validation Loss: 1.0240246802897632
+Epoch 20, Training Loss: 0.5935741066932678, Validation Loss: 1.0178708682991175
+Epoch 21, Training Loss: 0.5864645838737488, Validation Loss: 1.012517779817572
+Epoch 22, Training Loss: 0.5580059885978699, Validation Loss: 1.0073774842521461
+Epoch 23, Training Loss: 0.5439721345901489, Validation Loss: 1.002660360859526
+Epoch 24, Training Loss: 0.5199422836303711, Validation Loss: 0.9987955583611943
+Epoch 25, Training Loss: 0.5027462244033813, Validation Loss: 0.9950389181177081
+Epoch 26, Training Loss: 0.4915943145751953, Validation Loss: 0.9920423631373948
+Epoch 27, Training Loss: 0.48107102513313293, Validation Loss: 0.9891203535571307
+Epoch 28, Training Loss: 0.4690290093421936, Validation Loss: 0.9862593209541066
+Epoch 29, Training Loss: 0.457895427942276, Validation Loss: 0.9840096834089167
+Epoch 30, Training Loss: 0.448854923248291, Validation Loss: 0.9817709485360603
+Epoch 31, Training Loss: 0.4407978951931, Validation Loss: 0.9797502012424067
+Epoch 32, Training Loss: 0.43840309977531433, Validation Loss: 0.9779343006563269
+Epoch 33, Training Loss: 0.4329582452774048, Validation Loss: 0.9763800659656732
+Epoch 34, Training Loss: 0.4290566146373749, Validation Loss: 0.9750762008349152
+Epoch 35, Training Loss: 0.42613664269447327, Validation Loss: 0.9737665676451677
+Epoch 36, Training Loss: 0.42297089099884033, Validation Loss: 0.972627387221825
+Epoch 37, Training Loss: 0.42001184821128845, Validation Loss: 0.9715812760870257
+Epoch 38, Training Loss: 0.41825252771377563, Validation Loss: 0.9706987277456534
+Epoch 39, Training Loss: 0.4170286953449249, Validation Loss: 0.969840201862648
+Epoch 40, Training Loss: 0.41832494735717773, Validation Loss: 0.9691038511264034
+Epoch 41, Training Loss: 0.4195757806301117, Validation Loss: 0.9684956557610874
+Epoch 42, Training Loss: 0.42025938630104065, Validation Loss: 0.9679626705660485
+Epoch 43, Training Loss: 0.4216419458389282, Validation Loss: 0.9675115957774687
+Epoch 44, Training Loss: 0.4241608679294586, Validation Loss: 0.9670888608773627
+Epoch 45, Training Loss: 0.42596232891082764, Validation Loss: 0.9666932496061782
+Epoch 46, Training Loss: 0.42842286825180054, Validation Loss: 0.966322955648583
+Epoch 47, Training Loss: 0.4304920732975006, Validation Loss: 0.9660534409953592
+Epoch 48, Training Loss: 0.4327618181705475, Validation Loss: 0.9657887328342379
+Epoch 49, Training Loss: 0.43484926223754883, Validation Loss: 0.965560969292031
+Epoch 50, Training Loss: 0.436641663312912, Validation Loss: 0.9653662523379575
+Finished Training
+
+
+--------------------
+
+
+--------------------------------------------------
+Model Summary:
+MLP2(
+  (fc1): Linear(in_features=50, out_features=100, bias=True)
+  (fc2): Linear(in_features=100, out_features=150, bias=True)
+  (fc3): Linear(in_features=150, out_features=128, bias=True)
+  (fc4): Linear(in_features=128, out_features=120, bias=True)
+  (relu): ReLU()
+  (dropout): Dropout(p=0.5, inplace=False)
+)
+
+Loss function:
+CrossEntropyLoss()
+
+Optimizer:
+Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    initial_lr: 0.001
+    lr: 5.15377520732012e-06
+    maximize: False
+    weight_decay: 0.01
+)
+
+Learning Rate Scheduler:
+<torch.optim.lr_scheduler.ExponentialLR object at 0x29945db50>
+
+Number of Epochs: 50
+
+Final Training Loss: 0.436641663312912
+Final Validation Loss: 0.9653662523379575
+
+Final Validation Accuracy: 0.7211111111111111
+
+Total Training Time: 8.0 minutes, 13.349520921707153 seconds
+
+
+--------------------
+
+<Figure size 640x480 with 1 Axes>
+Model saved as: model-20240429-143105.pth
+
+```
