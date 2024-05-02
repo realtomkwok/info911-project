@@ -1,0 +1,50 @@
+Model Summary:
+MLP1_3HL(
+  (fc1): Linear(in_features=512, out_features=256, bias=True)
+  (fc2): Linear(in_features=256, out_features=128, bias=True)
+  (fc3): Linear(in_features=128, out_features=120, bias=True)
+  (relu): ReLU()
+  (dropout): Dropout(p=0.5, inplace=False)
+)
+
+Loss function:
+CrossEntropyLoss()
+
+Optimizer:
+Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    initial_lr: 0.001
+    lr: 5.15377520732012e-06
+    maximize: False
+    weight_decay: 0.01
+)
+
+Learning Rate Scheduler:
+<torch.optim.lr_scheduler.ExponentialLR object at 0x2aa281dd0>
+
+Number of Epochs: 50
+
+Final Training Loss: 0.933238685131073
+Final Validation Loss: 0.8650053140366073
+
+Average Validation Loss: 0.9635554881601976
+
+F1 Score: 0.728708936368574
+
+Confusion Matrix:
+[[ 7  0  0 ...  0  0  0]
+ [ 0 14  0 ...  0  0  0]
+ [ 0  0  7 ...  0  0  0]
+ ...
+ [ 0  0  0 ... 13  0  0]
+ [ 0  0  0 ...  2 16  0]
+ [ 0  0  0 ...  0  0 21]]
+
+Total Training Time: 10.0 minutes, 1.57 seconds. That is 601.57 seconds.
